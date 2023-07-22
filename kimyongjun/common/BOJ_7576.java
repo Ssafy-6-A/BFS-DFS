@@ -53,7 +53,6 @@ public class BOJ_7576 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         M = Integer.parseInt(st.nextToken());
         N = Integer.parseInt(st.nextToken());
-
         visited = new int[N][M];
 
         for (int i = 0; i < N; i++) {
@@ -73,7 +72,7 @@ public class BOJ_7576 {
     }
 
     private static void bfs() {
-        // 인접 토마토 탐색용 델타 배열
+        // 인접 사방 토마토 탐색용 델타 배열
         int[] dx = {-1, 1, 0, 0};
         int[] dy = {0, 0, -1, 1};
 
